@@ -53,3 +53,7 @@ To remove it:
 ```bash
 claude mcp remove apple-fm -s user
 ```
+
+## License
+
+[MIT](LICENSE)
