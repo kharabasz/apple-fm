@@ -54,6 +54,23 @@ To remove it:
 claude mcp remove apple-fm -s user
 ```
 
+### `/apple-fm` slash command
+
+The repo also ships a skill, so you can type `/apple-fm <prompt>` in Claude Code. It shows the model's answer unchanged. If the prompt names a file, the tool reads the file locally. Install it by linking it into your user skills folder:
+
+```bash
+ln -s "$PWD/skills/apple-fm" ~/.claude/skills/apple-fm
+```
+
+Examples:
+
+```text
+/apple-fm Suggest five names for a parts-lookup app
+/apple-fm What failed in /path/to/build.log?
+```
+
+The skill uses the MCP tool when the server is registered, and the `fm` CLI otherwise.
+
 ## License
 
 [MIT](LICENSE)
